@@ -1,6 +1,6 @@
 # feint
 
-[![NPM version](https://img.shields.io/npm/v/feint.svg)](https://www.npmjs.com/package/feint)
+[![npm version](https://img.shields.io/npm/v/feint.svg)](https://www.npmjs.com/package/feint)
 [![Build Status](https://travis-ci.org/shinnn/feint.svg?branch=master)](https://travis-ci.org/shinnn/feint)
 [![Coverage Status](https://img.shields.io/coveralls/shinnn/feint.svg)](https://coveralls.io/r/shinnn/feint)
 
@@ -47,4 +47,4 @@ existsSync('foo'); //=> true
 
 ## License
 
-[Creative Commons Zero v1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/deed)
+[ISC License](./LICENSE) © 2018 Shinnosuke Watanabe

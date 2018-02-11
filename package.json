@@ -10,7 +10,7 @@
     "pretest": "npm run-script build",
     "test": "istanbul cover test.js"
   },
-  "license": "CC0-1.0",
+  "license": "ISC",
   "module": "module.js",
   "files": [
     "index.js",
