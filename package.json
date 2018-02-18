@@ -5,16 +5,16 @@
   "repository": "shinnn/feint",
   "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
   "scripts": {
-    "prebuild": "eslint --fix --format=codeframe module.js test.js",
+    "prebuild": "eslint --fix --format=codeframe index.mjs test.js",
     "build": "rollup --config=node:module",
     "pretest": "npm run-script build",
-    "test": "istanbul cover test.js"
+    "test": "nyc --reporter=html --reporter=text node test.js"
   },
   "license": "ISC",
-  "module": "module.js",
+  "module": "index.mjs",
   "files": [
     "index.js",
-    "module.js"
+    "index.mjs"
   ],
   "keywords": [
     "feint",
@@ -24,21 +24,17 @@
     "time"
   ],
   "dependencies": {
-    "append-type": "^1.0.0"
+    "append-type": "^1.0.1"
   },
   "devDependencies": {
-    "@shinnn/eslint-config-node-legacy": "^3.0.0",
-    "eslint": "^3.19.0",
-    "istanbul": "^0.4.5",
-    "rollup": "^0.41.6",
-    "rollup-config-module": "^1.0.0",
-    "tape": "^4.6.3"
+    "@shinnn/eslint-config": "^5.4.0",
+    "eslint": "^4.18.0",
+    "nyc": "^11.5.0",
+    "rollup": "^0.56.2",
+    "rollup-config-module": "^2.0.0",
+    "tape": "^4.9.0"
   },
   "eslintConfig": {
-    "extends": "@shinnn/node-legacy",
-    "rules": {
-      "consistent-return": "off",
-      "prefer-rest-params": "off"
-    }
+    "extends": "@shinnn"
   }
 }
