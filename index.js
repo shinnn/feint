@@ -2,7 +2,7 @@
 
 var appendType = require('append-type');
 
-function createFeintFunction(fn) {
+module.exports = function createFeintFunction(fn) {
 	if (typeof fn !== 'function') {
 		throw new TypeError('Expected a function, but got ' + appendType(fn) + '.');
 	}
@@ -18,5 +18,3 @@ function createFeintFunction(fn) {
 		return fn.apply(this, arguments);
 	};
 }
-
-module.exports = createFeintFunction;

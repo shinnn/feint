@@ -3,12 +3,12 @@
   "version": "1.0.2",
   "description": "Make a given function do nothing at its first call",
   "repository": "shinnn/feint",
-  "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
+  "author": "Watanabe Shinnosuke (https://github.com/shinnn)",
   "scripts": {
-    "prebuild": "eslint --fix --format=codeframe index.mjs test.js",
+    "prebuild": "eslint .",
     "build": "rollup --config=node:module",
     "pretest": "npm run-script build",
-    "test": "nyc --reporter=html --reporter=text node test.js"
+    "test": "coverage test.mjs"
   },
   "license": "ISC",
   "module": "index.mjs",
@@ -24,15 +24,15 @@
     "time"
   ],
   "dependencies": {
-    "append-type": "^1.0.1"
+    "append-type": "^1.0.2"
   },
   "devDependencies": {
-    "@shinnn/eslint-config": "^5.4.0",
-    "eslint": "^4.18.1",
-    "nyc": "^11.5.0",
-    "rollup": "^0.56.3",
-    "rollup-config-module": "^2.0.0",
-    "tape": "^4.9.0"
+    "@shinnn/eslint-config": "^6.10.4",
+    "coverage": "^0.3.3",
+    "eslint": "^5.16.0",
+    "rollup": "^1.12.3",
+    "rollup-config-module": "^2.0.2",
+    "testit": "^3.1.0"
   },
   "eslintConfig": {
     "extends": "@shinnn"
