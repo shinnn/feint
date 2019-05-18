@@ -1,6 +1,6 @@
 {
   "name": "feint",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Make a given function do nothing at its first call",
   "repository": "shinnn/feint",
   "author": "Watanabe Shinnosuke (https://github.com/shinnn)",
