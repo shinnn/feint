@@ -1,7 +1,7 @@
 # feint
 
 [![npm version](https://img.shields.io/npm/v/feint.svg)](https://www.npmjs.com/package/feint)
-[![Build Status](https://travis-ci.com/shinnn/feint.svg?branch=master)](https://travis-ci.com/shinnn/feint)
+[![Github Actions](https://action-badges.now.sh/shinnn/feint)](https://wdp9fww0r9.execute-api.us-west-2.amazonaws.com/production/results/shinnn/feint)
 [![codecov](https://codecov.io/gh/shinnn/feint/branch/master/graph/badge.svg)](https://codecov.io/gh/shinnn/feint)
 
 Make a given `Function` do nothing at its first call
@@ -17,7 +17,7 @@ fn(); //=> 1
 
 ## Installation
 
-[Use](https://docs.npmjs.com/cli/install) [npm]https://docs.npmjs.com/about-npm/).
+[Use](https://docs.npmjs.com/cli/install) [npm](https://docs.npmjs.com/about-npm/).
 
 ```
 npm install feint
